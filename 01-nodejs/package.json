@@ -1,0 +1,17 @@
+{
+   "name": "01-nodejs",
+   "version": "1.0.0",
+   "description": "",
+   "main": "teste.js",
+   "scripts": {
+      "start": "node teste.js",
+      "roda": "node xxx.js"
+   },
+   "keywords": [],
+   "author": "WBCode",
+   "license": "ISC",
+   "type": "commonjs",
+   "devDependencies": {
+      "typescript": "^6.0.3"
+   }
+}
