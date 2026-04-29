@@ -4,14 +4,15 @@
    "description": "",
    "main": "teste.js",
    "scripts": {
-      "start": "node teste.js",
-      "roda": "node xxx.js"
+      "build": "tsc",
+      "start": "ts-node ./teste.ts"
    },
    "keywords": [],
    "author": "WBCode",
    "license": "ISC",
-   "type": "commonjs",
+   "type": "module",
    "devDependencies": {
+      "ts-node": "^10.9.2",
       "typescript": "^6.0.3"
    }
 }

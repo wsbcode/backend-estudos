@@ -1,0 +1,30 @@
+{
+   "compilerOptions": {
+      /* Layout de Arquivos */
+      // "rootDir": "./src",        // Onde estão seus arquivos .ts originais
+      "outDir": "./dist", // Onde o TypeScript vai salvar os arquivos .js gerados
+
+      /* Configurações de Ambiente */
+      "module": "nodenext", // Define como o Node deve importar/exportar módulos (moderno)
+      "target": "ESNext", // Versão do JavaScript final (ESNext é a mais moderna)
+      "types": [], // Lista de pacotes de tipos extras (vazio por padrão)
+
+      /* Outras Saídas */
+      "sourceMap": false, // Não cria o arquivo .map (aquele que ajuda no debug)
+      "declaration": false, // Não cria o arquivo .d.ts (manual de tipos)
+      "declarationMap": false, // Não cria o mapa para o manual de tipos
+
+      /* Opções de Checagem Estrita (Segurança) */
+      "noUncheckedIndexedAccess": true, // Avisa se você tentar acessar uma lista que pode estar vazia
+      "exactOptionalPropertyTypes": true, // Impede que você mande "undefined" para algo opcional
+
+      /* Opções Recomendadas */
+      "strict": true, // Liga todas as proteções de segurança (Essencial!)
+      "jsx": "react-jsx", // Configura como tratar arquivos de interface (como React)
+      "verbatimModuleSyntax": true, // Mantém as importações exatamente como você escreveu
+      "isolatedModules": true, // Garante que cada arquivo possa ser traduzido sozinho
+      "noUncheckedSideEffectImports": true, // Evita importar arquivos que não fazem nada
+      "moduleDetection": "force", // Força o TS a tratar todo arquivo como um módulo único
+      "skipLibCheck": true // Pula a checagem de erros dentro das bibliotecas instaladas (economiza tempo)
+   }
+}
