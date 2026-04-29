@@ -1,7 +1,9 @@
 {
+   "include": ["src/**/*"],
+
    "compilerOptions": {
       /* Layout de Arquivos */
-      // "rootDir": "./src",        // Onde estão seus arquivos .ts originais
+      "rootDir": "./src", // Onde estão seus arquivos .ts originais
       "outDir": "./dist", // Onde o TypeScript vai salvar os arquivos .js gerados
 
       /* Configurações de Ambiente */

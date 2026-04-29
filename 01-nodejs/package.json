@@ -4,15 +4,16 @@
    "description": "",
    "main": "teste.js",
    "scripts": {
+      "dev": "tsx --watch src/teste.ts",
       "build": "tsc",
-      "start": "ts-node ./teste.ts"
+      "start": "node dist/teste.js"
    },
    "keywords": [],
    "author": "WBCode",
    "license": "ISC",
    "type": "module",
    "devDependencies": {
-      "ts-node": "^10.9.2",
+      "tsx": "^4.21.0",
       "typescript": "^6.0.3"
    }
 }
