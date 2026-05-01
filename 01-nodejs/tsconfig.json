@@ -8,8 +8,9 @@
 
       /* Configurações de Ambiente */
       "module": "nodenext", // Define como o Node deve importar/exportar módulos (moderno)
-      "target": "ESNext", // Versão do JavaScript final (ESNext é a mais moderna)
-      "types": [], // Lista de pacotes de tipos extras (vazio por padrão)
+      "target": "ESNext",
+      // Versão do JavaScript final (ESNext é a mais moderna)
+      "types": ["node"], // Lista de pacotes de tipos extras (vazio por padrão)
 
       /* Outras Saídas */
       "sourceMap": false, // Não cria o arquivo .map (aquele que ajuda no debug)
