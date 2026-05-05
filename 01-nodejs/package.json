@@ -4,7 +4,7 @@
    "description": "",
    "main": "server.js",
    "scripts": {
-      "dev": "tsx --watch --env-file=.env src/server.ts",
+      "dev": "tsx --watch --env-file=.env src/base.ts",
       "build": "tsc",
       "start": "node dist/server.js"
    },
@@ -19,6 +19,7 @@
       "typescript": "^6.0.3"
    },
    "dependencies": {
-      "express": "^5.2.1"
+      "express": "^5.2.1",
+      "helmet": "^8.1.0"
    }
 }
