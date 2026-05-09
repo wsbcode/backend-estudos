@@ -1,6 +1,7 @@
 import express from "express";
 import helmet from "helmet";
 import path from "path";
+import { send } from "process";
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -14,6 +15,10 @@ server.use(express.urlencoded({ extended: true }));
 server.use(express.static(path.join(__dirname, "../public")));
 
 // --- AULAS SOBRE ROTAS ---
+
+server.get("/", (req, res) => {
+   res.json("Servidor Online");
+});
 
 // 1. Rota Estática Simples: Apenas para teste de conexão
 server.get("/foi", (req, res) => {
