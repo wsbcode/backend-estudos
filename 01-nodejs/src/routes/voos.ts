@@ -2,6 +2,16 @@ import express from "express";
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+   res.json({
+      voos: {
+         bahia: 10,
+         brasilia: 20,
+         parana: 30,
+      },
+   });
+});
+
 // 4. Rota Dinâmica com Múltiplos Parâmetros (:de e :para)
 router.get("/:de/:para", (req, res) => {
    // Extraímos os dois valores da URL de uma só vez
