@@ -5,8 +5,8 @@ const router = express.Router();
 router.get("/", (req, res) => {
    res.json({
       voos: {
-         bahia: 10,
-         brasilia: 20,
+         Bahia: 10,
+         Brasilia: 20,
          parana: 30,
       },
    });
@@ -22,7 +22,7 @@ router.get("/:de/:para", (req, res) => {
          // .toLocaleUpperCase() transforma o texto em MAIÚSCULO (ex: gru -> GRU)
          de: de.toLocaleUpperCase(),
          para: para.toLocaleUpperCase(),
-         preco: 99999,
+         valor: 99999,
       },
    });
 });

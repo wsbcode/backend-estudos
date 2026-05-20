@@ -1,3 +1,9 @@
+// RequestHandler: É a tipagem para middlewares e rotas NORMAIS.
+// Ele lida com o fluxo padrão da API (req, res, next) quando tudo está correndo bem.
+
+// ErrorRequestHandler: É a tipagem EXCLUSIVA para middlewares de ERRO.
+// Ele sempre recebe 4 parâmetros, começando pelo erro (err, req, res, next),
+// servindo como o "colchão de segurança" para capturar falhas do sistema.
 import type { ErrorRequestHandler, RequestHandler } from "express";
 
 // Middleware para tratar rotas não encontradas (404).

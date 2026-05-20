@@ -51,7 +51,7 @@ server.get("/voos/:de/:para", (req, res) => {
          // .toLocaleUpperCase() transforma o texto em MAIÚSCULO (ex: gru -> GRU)
          de: de.toLocaleUpperCase(),
          para: para.toLocaleUpperCase(),
-         preco: 999,
+         valor: 999,
       },
    });
 });
