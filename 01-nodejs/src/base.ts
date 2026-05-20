@@ -39,6 +39,7 @@ server.get("/", (req, res) => {
    let userId = 33; // Sua idade/ID
 
    // 8. Enviamos a resposta no formato JSON
+   res.status(201);
    res.json({ name, userId });
 });
 
