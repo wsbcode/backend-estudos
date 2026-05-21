@@ -3,7 +3,7 @@ import type { RequestHandler } from "express";
 // Criando um middleware chamado "interferir" usando a tipagem padrão de rotas.
 export const interferir: RequestHandler = (req, res, next) => {
    // Cria uma variável simulando se o usuário está logado (false = não está logado)
-   let logged = false;
+   let logged = true;
 
    // Se a variável "logged" for verdadeira (true)...
    if (logged) {
