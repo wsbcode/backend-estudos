@@ -10,6 +10,7 @@ const router = express.Router();
 router.use(interferir);
 // Rota acessada em caso de nenhum parâmero, apenas pelo link http://localhost:3000/
 router.get("/", (req, res) => {
+   res.status(404);
    res.json("Servidor Online");
 });
 
