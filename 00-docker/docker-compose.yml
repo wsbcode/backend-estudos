@@ -11,3 +11,8 @@ services:
          POSTGRES_DB: teste
          POSTGRES_USER: testador
          POSTGRES_PASSWORD: "1234"
+      volumes:
+         - postgres_data:/var/lib/postgresql/data
+
+volumes:
+   postgres_data:
